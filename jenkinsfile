@@ -4,6 +4,7 @@ pipeline {
     }
     environment {
         NEWRELIC_API_KEY = credentials('ansible01')
+        SAMPLE_URL = "google.com"
     }
     stages {
 
