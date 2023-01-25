@@ -6,16 +6,16 @@ pipeline {
         NEWRELIC_API_KEY = credentials('ansible01')
     }
     stages {
+
         stage('Foo') {
             steps {
               echo 'Hello world'
             }
         }
-        stages {
-                stage('Bar') {
-                    steps {
-                      echo 'Hello world'
-                    }
-                }
+          stage('Foo') {
+              steps {
+                echo 'Hello world'
+              }
+          }
     }
 }
